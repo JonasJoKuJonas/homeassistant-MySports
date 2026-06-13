@@ -1,0 +1,63 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "MySports",
+                "description": "Melde dich mit deinen MySports-Zugangsdaten an.",
+                "data": {
+                    "username": "Benutzername / E-Mail",
+                    "password": "Passwort"
+                }
+            },
+            "reauth_confirm": {
+                "title": "MySports erneute Authentifizierung",
+                "description": "Das Passwort wurde geändert. Bitte melde dich erneut an.",
+                "data": {
+                    "username": "Benutzername / E-Mail",
+                    "password": "Passwort"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Verbindung zu MySports fehlgeschlagen",
+            "invalid_auth": "Ungültige Anmeldedaten",
+            "no_studios_found": "Keine Studios gefunden - überprüfe dein Konto",
+            "unknown": "Ein unerwarteter Fehler ist aufgetreten"
+        },
+        "abort": {
+            "already_configured": "Dieses Konto ist bereits konfiguriert",
+            "reauth_successful": "Erneute Authentifizierung erfolgreich"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "MySports Optionen",
+                "description": "Passe die Integrationseinstellungen an.",
+                "data": {
+                    "scan_interval": "Aktualisierungsintervall (Minuten)",
+                    "calendar_scan_interval": "Kalender-Aktualisierungsintervall (Minuten)"
+                }
+            }
+        },
+        "error": {
+            "min_interval": "Das Intervall muss mindestens 10 Minuten betragen"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "studio_utilization": {
+                "name": "Auslastung",
+                "state": {
+                    "online": "Online",
+                    "offline": "Offline"
+                }
+            }
+        },
+        "calendar": {
+            "courses_calendar": {
+                "name": "Kurse"
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "MySports",
+                "description": "Log in with your MySports credentials.",
+                "data": {
+                    "username": "Username / Email",
+                    "password": "Password"
+                }
+            },
+            "reauth_confirm": {
+                "title": "MySports Reauthentication",
+                "description": "The password changed. Please log in again.",
+                "data": {
+                    "username": "Username / Email",
+                    "password": "Password"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Failed to connect to MySports",
+            "invalid_auth": "Invalid authentication credentials",
+            "no_studios_found": "No studios found - check your account",
+            "unknown": "An unexpected error occurred"
+        },
+        "abort": {
+            "already_configured": "This account is already configured",
+            "reauth_successful": "Reauthentication successful"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "MySports Options",
+                "description": "Adjust the integration settings.",
+                "data": {
+                    "scan_interval": "Update interval (minutes)",
+                    "calendar_scan_interval": "Calendar update interval (minutes)"
+                }
+            }
+        },
+        "error": {
+            "min_interval": "Interval must be at least 10 minutes"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "studio_utilization": {
+                "name": "Utilization",
+                "state": {
+                    "online": "Online",
+                    "offline": "Offline"
+                }
+            }
+        },
+        "calendar": {
+            "courses_calendar": {
+                "name": "Courses"
+            }
+        }
+    }
+}
